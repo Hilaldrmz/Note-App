@@ -1,0 +1,158 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$base-font: 'Poppins', sans-serif !default;
+
+
+
+/// Main brand color
+/// @type Color
+$brand-color: undefined;
+
+/// Background Colors
+/// @type Color
+$bg-white: white;
+$bg-light: #ebebeb;
+$bg-dark: #181919;
+
+/// Basic Colors
+/// @type Color
+
+$color-coral: #F45D4C;
+$color-orange: #F7A541;
+$color-green: #A1DBB2;
+$color-yellow: #FACA66;
+$color-blue: #54787D;
+$color-teal: #60B99A;
+$color-purple: #5B527F;
+$color-gray: #555555;
+$color-black: #000000;
+
+/// Website Color Palette
+/// @type Color
+
+$primary-color: $color-orange;
+$secondary-color: $color-yellow;
+$tertiary-color: $color-blue;
+$highlight-color: $color-orange;
+
+/// Text Colors
+/// @type Color
+
+$text-light: white;
+$text-grey:#5f6368;
+$text-dark: black;
+
+///Hover Background
+///  @type Color
+$hover-bg: rgba(60,64,67,.1);
+
+/// Border Color
+/// @type Color
+$border: 1px solid #ebebeb;
+
+///Shadow Color
+/// @type Color
+$shadow: (
+    0 2px 5px 1px rgba(64,60,67,.16)
+);
+$shadow2: (0 20px 25px -5px rgb(0 0 0 / .05), 0 8px 10px -6px rgb(0 0 0 / .05));
+
+/// Logo Colors
+/// @type Color
+
+$logo-light: white;
+$logo-dark: $bg-dark;
+
+
+/// Heading Styles
+$heading-font-family: $base-font;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: {
+        family: $heading-font-family ;
+        weight: 700;
+    }
+
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+
+// Paragraph Styles
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+// Article Styles
+article {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+
+    article {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        a {
+
+            text-decoration: none;
+
+            &:hover {
+
+                text-decoration: underline;
+            }
+        }
+    }
+}
