@@ -136,18 +136,18 @@ const updateLocalStorage = (event) => {
 
 
 // const searchQuery = ref("");
-const searchQuery = inject('searchQuery');
-console.log(searchQuery);
+// const searchQuery = inject('searchQuery');
+// console.log(searchQuery);
 
-const filteredList = computed(() => {
-    if (searchQuery.value === '') {
-        return notes.value;
-    } else {
-        return notes.value.filter(note =>
-            note.text.toLowerCase().includes(searchQuery.value.toLowerCase())
-        );
-    }
-});
+// const filteredList = computed(() => {
+//     if (searchQuery.value === '') {
+//         return notes.value;
+//     } else {
+//         return notes.value.filter(note =>
+//             note.text.toLowerCase().includes(searchQuery.value.toLowerCase())
+//         );
+//     }
+// });
 
 
 </script>
